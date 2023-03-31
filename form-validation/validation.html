@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validation-form</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <h2>Regitration Form</h2>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="User id">User id:</label> <input type="text" id="user id" name="User id" placeholder="User ID" required,length of 5 to 12 characters>
+                    </div>    
+                </div>
+            <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Password">Password: </label><input type="text" id="Password" name="Your Password" placeholder="Your Password.."required, length of 5 to 12 characters>
+                    </div>
+                </div>
+            <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Name">Name: </label><input type="text" id="Name" name="Your name" placeholder="Your name.."required, letters only>
+                    </div>
+                </div>
+            <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Address">Address: </label><input type="text" id="Address" name="Your Address" placeholder="Your Address..">
+                    </div>
+                </div>
+            <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">South Africa</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            </select>
+                    </div>
+                </div>
+            <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Zcode">ZIP Code: </label><input type="text" id="ZIP Code" name="ZIP Code" placeholder="Your ZIP Code.."required, numeric only>
+                    </div>
+                </div>
+            <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Email">Email: </label><input type="text" id="Address" name="Your email" placeholder="Your email.."required, valid email address only>
+                    </div>
+                </div>
+            <br>   
+                <div class="row">
+                    <p> Sex: </label><input type="radio" id="Male" name="Male"> <label for="Male">Male </label><input type="radio" id="Female" name="Female"> <label for="Female"> Female</p>
+                </div>
+
+                <div class="row">
+                    <p> Language: </label><input type="checkbox" id="English" name="English"required> <label for="Male">English </label><input type="checkbox" id="n-english" name="n-english"required> <label for="n-english"> Non English</p>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">About:
+                            <textarea id="about" name="subject" placeholder="Write something.." style="width:500px; height:250px"></textarea>
+                        </label>
+                    </div>
+                </div>
+            <br>
+                <div class="row">
+                    <input type="submit" value="Submit" style= "float: none;">
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
